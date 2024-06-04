@@ -24,6 +24,6 @@ const io = SocketIo(httpServer, {
 
 socketHandler(io);
 
-httpServer.listen(3009, () => {
+httpServer.listen(process.env.PORT, () => {
   console.log("Socket Server running on port 3009");
 });
